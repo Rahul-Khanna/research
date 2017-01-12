@@ -166,6 +166,7 @@ createFeaturesForData(testingData)
 print len(testingData[0].features[0])
 
 # write reviews here
+# didn't want this to be a pickle file, so that I can visually see the features
 with open("data/scoredReviewsAllFeaturesTrainingWithCosine","w") as f:
 	for review in trainingData:
 		f.write(str(review))
