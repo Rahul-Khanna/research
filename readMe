@@ -1,2 +1,12 @@
-Just some cleaned up code written for reseach
-ldaSegmentation will not work unless certain source files are present
+Just some cleaned up code written for research for Columbia University’s Database Group
+
+Advisor: Professor Eugene Wu
+http://www.cs.columbia.edu/~ewu/
+
+All code is property of the university, but has an MIT license.
+
+ldaSegmentation:
+Will not work unless certain source files are present
+Original code can be found here: https://github.com/cudbg/Dialectic
+The idea was to create a pipeline that gave user’s real time feedback while they wrote reviews for items, in our case the pool of items was restricted to laptops.
+
