@@ -24,8 +24,7 @@ Note:
 
 Introduction:
 
-Latent Dirichlet Allocation, LDA, is a generative statistical model that attempts to group words into topics given k, a number of topics, and a corpus. The framework of this model is that each document has a topic distribution, and each topic has a word distribution. The word distributions for each topic is a list a tuples that assigns a certain probability to each word in the corpus belonging to the topic. The idea behind the model is that each document is a sequence of words, and
-to generate each word in a document, you first pick a topic from the available topics, and then from each topic you choose a word given the available words. The model learns the topic distribution and the word distributions that maximize the posterior likelihood of seeing the given corpus. The prior distributions of the word and topic distributions are Dirichlet.
+Latent Dirichlet Allocation, LDA, is a generative statistical model that attempts to group words into topics given k, a number of topics, and a corpus. The framework of this model is that each document has a topic distribution, and each topic has a word distribution. The word distributions for each topic is a list a tuples that assigns a certain probability to each word in the corpus belonging to the topic. The idea behind the model is that each document is a sequence of words, and to generate each word in a document, you first pick a topic from the available topics, and then from each topic you choose a word given the available words. The model learns the topic distribution and the word distributions that maximize the posterior likelihood of seeing the given corpus. The prior distributions of the word and topic distributions are Dirichlet.
 
 For more information refer to this paper: https://www.cs.princeton.edu/~blei/papers/BleiNgJordan2003.pdf
 
