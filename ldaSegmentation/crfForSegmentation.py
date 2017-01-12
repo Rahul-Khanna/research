@@ -16,7 +16,7 @@ import pdb
 listOfReviewFeatures=[]
 listOfReviewTags=[]
 listOfReviews=[]
-with open("scoredReviewsAllFeaturesTrainingWithCosine") as f:
+with open("data/scoredReviewsAllFeaturesTrainingWithCosine") as f:
 	for dic in f:
 		temp=eval(dic)
 		rows=len(temp['realTags'])
@@ -45,6 +45,9 @@ print len(ssvm.w)
 print "Train Score: \n"
 print(ssvm.score(X_train, Y_train))
 
+# to see if there is any difference between tagging everything as zero and the crf model
+# features need to be worked on
+# package was being used slightly wrong
 zeroCount=0
 totalCount=0.0
 for tags in listOfReviewTags:
@@ -64,7 +67,7 @@ for i in range(0,len(listOfReviews)):
 listOfReviewFeatures2=[]
 listOfReviewTags2=[]
 listOfReviews2=[]
-with open("scoredReviewsAllFeaturesTestingWithCosine") as f:
+with open("data/scoredReviewsAllFeaturesTestingWithCosine") as f:
 	for dic in f:
 		temp=eval(dic)
 		rows=len(temp['realTags'])
@@ -97,13 +100,13 @@ for i in range(0,len(listOfReviews2)):
 # store the results of crf for review:
 # example:
 
-with open("taggedReviews/trainingData","wb") as f:
+with open("data/trainingData","wb") as f:
 	pickle.dump(listOfReviews,f)
 
-with open("taggedReviews/testingData","wb") as f:
+with open("data/testingData","wb") as f:
 	pickle.dump(listOfReviews2,f)
 
-with open("taggedReviews/visualTrainingData","w") as f:
+with open("data/visualTrainingData","w") as f:
 	for i in range(0,10):
 		f.write(str(listOfReviews[i]))
 		f.write("\n")

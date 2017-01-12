@@ -96,7 +96,7 @@ for review in reviewsToBeTagged:
 	taggedReviews.append(tR)
 
 # writting out the tagged reviews
-with open("taggedReviews/allReviews2","w") as f:
+with open("data/allReviews2","w") as f:
 	for review in taggedReviews:
 		f.write(str(review))
 		f.write("\n")

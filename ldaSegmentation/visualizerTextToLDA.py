@@ -4,11 +4,11 @@
 
 import pdb
 tuples=[]
-with open("../ldaText") as f:
+with open("data/ldaText") as f:
 	for line in f:
 		tuples.append(eval(line))
 
-with open("visualTextLda.html","w") as f:
+with open("html/visualTextLda.html","w") as f:
 	f.write("<!DOCTYPE html>\n")
 	f.write("<html>\n")
 	f.write("<head>\n")

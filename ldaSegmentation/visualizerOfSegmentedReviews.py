@@ -25,7 +25,7 @@ def createSegments(sentences,tags):
 
 reviews={}
 
-with open("trainingData","rb") as f:
+with open("data/trainingData","rb") as f:
 	temp=pickle.load(f)
 	for obj in temp:
 		reviews[obj.id]={}
@@ -36,7 +36,7 @@ with open("trainingData","rb") as f:
 		segments=createSegments(obj.sentences,obj.realTags)
 		reviews[obj.id]["realSegments"]=segments
 
-with open("testingData","rb") as f:
+with open("data/testingData","rb") as f:
 	temp=pickle.load(f)
 	for obj in temp:
 		reviews[obj.id]={}
@@ -48,7 +48,7 @@ with open("testingData","rb") as f:
 		reviews[obj.id]["realSegments"]=segments
 
 
-with open("visualOfOriginalText.html","w") as f:
+with open("html/visualOfSegmentedReviews.html","w") as f:
 	f.write("<!DOCTYPE html>\n")
 	f.write("<html>\n")
 	f.write("<head>\n")

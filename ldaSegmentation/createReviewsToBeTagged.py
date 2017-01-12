@@ -22,6 +22,8 @@ bad=0
 medium=0
 good=0
 
+# this file exists in the actual directory this code sits in
+print "warning : nothing will be created"
 filenames = ["../data/laptopReviews.txt"]
 
 # scoring reviews and creating the needed dataset

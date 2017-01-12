@@ -11,7 +11,7 @@ data=[]
 testData=[]
 trainData=[]
 
-with open("taggedReviews/allReviews2") as f:
+with open("data/allReviews2") as f:
 	for line in f:
 		temp=eval(line)
 		review=convertToReview(temp)
@@ -21,14 +21,14 @@ with open("taggedReviews/allReviews2") as f:
 
 trainData,testData=train_test_split(data,test_size=0.15,random_state=1)
 
-with open("taggedReviews/trainingData","wb") as f:
+with open("data/trainingData","wb") as f:
 	pickle.dump(trainData,f)
 
-with open("taggedReviews/testingData","wb") as f:
+with open("data/testingData","wb") as f:
 	pickle.dump(testData,f)
 
 # just to view the actual reviews
-with open("taggedReviews/visualTrainingData","w") as f:
+with open("data/visualTrainingData","w") as f:
 	for i in range(0,10):
 		f.write(str(trainData[i]))
 		f.write("\n")

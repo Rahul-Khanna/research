@@ -7,14 +7,14 @@ import pickle
 train=[]
 test=[]
 
-with open("taggedReviews/trainingData","rb") as f:
+with open("data/trainingData","rb") as f:
 	temp=pickle.load(f)
 	for obj in temp:
 		tup=("".join(str(e) for e in obj.realTags),"".join(str(e) for e in obj.predictedTags))
 		train.append(tup)
 
 
-with open("taggedReviews/testingData","rb") as f:
+with open("data/testingData","rb") as f:
 	temp=pickle.load(f)
 	for obj in temp:
 		tup=("".join(str(e) for e in obj.realTags),"".join(str(e) for e in obj.predictedTags))

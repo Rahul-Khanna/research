@@ -24,12 +24,12 @@ def getDifference(option,firstVector,secondVector):
 
 data=[]
 
-with open("taggedReviews/trainingData","rb") as f:
+with open("data/trainingData","rb") as f:
 	temp=pickle.load(f)
 	for obj in temp:
 		data.append(obj)
 
-with open("taggedReviews/testingData","rb") as f:
+with open("data/testingData","rb") as f:
 	temp=pickle.load(f)
 	for obj in temp:
 		data.append(obj)

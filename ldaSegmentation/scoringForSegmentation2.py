@@ -150,12 +150,12 @@ trainingData=[]
 testingData=[]
 
 # reading in the data
-with open("taggedReviews/trainingData","rb") as f:
+with open("data/trainingData","rb") as f:
 	temp=pickle.load(f)
 	for obj in temp:
 		trainingData.append(obj)
 
-with open("taggedReviews/testingData","rb") as f:
+with open("data/testingData","rb") as f:
 	temp=pickle.load(f)
 	for obj in temp:
 		testingData.append(obj)
@@ -166,12 +166,12 @@ createFeaturesForData(testingData)
 print len(testingData[0].features[0])
 
 # write reviews here
-with open("scoredReviewsAllFeaturesTrainingWithCosine","w") as f:
+with open("data/scoredReviewsAllFeaturesTrainingWithCosine","w") as f:
 	for review in trainingData:
 		f.write(str(review))
 		f.write("\n")
 
-with open("scoredReviewsAllFeaturesTestingWithCosine","w") as f:
+with open("data/scoredReviewsAllFeaturesTestingWithCosine","w") as f:
 	for review in testingData:
 		f.write(str(review))
 		f.write("\n")

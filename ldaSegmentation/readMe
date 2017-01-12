@@ -1,0 +1,15 @@
+How To Run:
+
+Second Iteration of Pipeline
+
+1. python createReviewsToBeTagged.py
+2. Manually annotate where the reviews should be segmented by editing the output of step 1
+3. python tagger2.py
+4. python trainTestSplitter.py
+5. python scoringForSegmentation2.py
+6. python crfForSegmentation.py
+
+Note:
+
+Steps 1, 2, 3 will not work unless you properly move over files from :
+https://github.com/cudbg/Dialectic

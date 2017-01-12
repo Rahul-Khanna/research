@@ -2,6 +2,9 @@
 # Author : Rahul Khanna
 
 # The graph object used by all scripts in graphApproach
+# The scripts that use this module are not included in the cleaned up version
+# Was more of a hack to see if a graph based approach with LDA could improve on the segmentation
+# The approach was based off this paper : https://perso.limsi.fr/yvon/publications/sources/Misra09textsegmentation.pdf
 class Graph():
 	def __init__(self,id,review,sentences,realTags,nodeDictionary=None,edgeDictionary=None,k=None,predictedTags=None,words=None,realTagsWordLevel=None,wordToSentence=None):
 		self.id=id
@@ -77,6 +80,3 @@ class Graph():
 		}
 
 		return str(output)
-
-
-

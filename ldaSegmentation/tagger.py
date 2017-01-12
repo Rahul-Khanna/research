@@ -11,10 +11,13 @@ import pdb
 # the english model from spacy
 en_nlp=spacy.load('en')
 
+# this wont work as these files aren't in place
+print "warning : nothing will be created"
+
 # checking the number of tagged reviews, assuming per document read a new document will be used to write to
 count=-1
-with open("taggedReviews/usefulTaggedReviews1","r") as f:
-	if os.stat("taggedReviews/usefulTaggedReviews1").st_size>0:
+with open("data/usefulTaggedReviews1","r") as f:
+	if os.stat("data/usefulTaggedReviews1").st_size>0:
 		lines=f.read()
 		lines=lines.split("\n")
 
@@ -25,7 +28,7 @@ with open("taggedReviews/usefulTaggedReviews1","r") as f:
 
 # reading the reviews to be tagged and stored
 # to allow for the pausing of the tagging process, each review that is tagged is appeneded to the file
-with open("taggedReviews/usefulTaggedReviews1","a") as f1:
+with open("data/usefulTaggedReviews1","a") as f1:
 	with open("../inputs/random20.txt") as f:
 		reviews=f.read()
 		reviews=reviews.split("\n\n")
