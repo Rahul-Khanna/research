@@ -1,0 +1,82 @@
+
+.zero {
+	color: white;
+	background-color: blue;
+}
+
+.one {
+	color: white;
+	background-color: DarkGoldenRod;
+}
+
+.two {
+	color: white;
+	background-color: red;
+}
+
+.three {
+	color: white;
+	background-color: green;
+}
+
+.four{
+	color: white;
+	background-color: purple;
+}
+
+.five {
+	color: white;
+	background-color: orange;
+}
+
+.six {
+	color: white;
+	background-color: pink;
+}
+
+.seven {
+	color: white;
+	background-color: DeepSkyBlue;
+}
+
+.wrong {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+	width: 50%;
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color:black;
+    color:white;
+    margin:0;
+    font-size:small;
+}
+
+#header p {
+  display:inline;
+  padding: 5px;
+}
+
+#body {
+   margin-top: 8em;
+	 overflow: auto;
+}
