@@ -3,12 +3,13 @@ Cleaned up code written for research for Columbia University’s Database Group
 Advisor: Professor Eugene Wu
 http://www.cs.columbia.edu/~ewu/
 
-All code is property of the university, but has an MIT license.
+All code is property of the Columbia University, but has an MIT license.
 
 ldaSegmentation:
 Will not work unless certain source files are present
 
 Original code can be found here: https://github.com/cudbg/Dialectic
 
-The idea was to create a pipeline that gave user’s real time feedback while they wrote reviews for items they had purchased, in our case the pool of items was restricted to laptops.
+The idea was to create a pipeline that gave user’s real time feedback while they wrote reviews for items they had purchased, in our case the items was restricted to laptops.
 
+Please look at the readMe inside of ldaSegmentation for information as to how the code works
